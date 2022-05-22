@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课程页</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/couse.css">
+</head>
+<body>
+    <div class="course-page">
+        <div class="page-header">
+            <div class="default-header pullup-display">
+                <a class="header-index-link" href="https://www.jiker.com/">
+                    <img class="header-logo" src="https://www.jiker.com/_nuxt/img/f43b9a4.svg">
+                </a>
+                <div class="header-right">
+                    <div class="header-right-top">
+                        <div class="search-input-container">
+                            <input class="input-inner" type="text" placeholder="你想学点什么？">
+                            <span class="input-prefix">
+                                <i class="input-prefix-icon"></i>
+                            </span>
+                            <button class="search-button">搜索</button>
+                        </div>
+                        <div class="login-container">
+                            <div class="login-button">
+                                <a class="login-link" href="https://account.jiker.com/?referer=https%3A%2F%2Fwww.jiker.com%2F">登录/注册</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-right-bottom">
+                        <div class="nav-left-container">
+                            <a class="nav-left-item" href="https://www.jiker.com/free">限免专区</a>
+                            <a class="nav-left-item" href="https://www.jiker.com/course">视频课</a>
+                            <a class="nav-left-item" href="https://www.jiker.com/plus">实战营</a>
+                            <a class="nav-left-item" href="https://www.jiker.com/evaluation">练功房</a>
+                            <div class="nav-left-item nav-company">专题课
+                                <span class="nav-company-hover"></span>
+                                <div class="nav-company-menu">
+                                    <div class="company-menu-frame">
+                                        <a class="company-menu-link" href="https://www.jiker.com/cooperate/bluestar">蓝星球</a>
+                                        <a class="company-menu-link" href="https://www.jiker.com/cooperate/qualcomm">高通</a>
+                                        <a class="company-menu-link" href="https://www.jiker.com/cooperate/microsoft">微软人工智能</a>
+                                        <a class="company-menu-link" href="https://www.jiker.com/cooperate/tencent">腾讯云</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="nav-left-item mr-0" href="https://www.jiker.com/one">企业人才云</a>
+                            <img class="nav-left-icon" src="https://www.jiker.com/_nuxt/img/8d29de5.png">
+                        </div>
+                        <div class="nav-right-container">
+                            <a class="nav-right-item" href="https://www.jiker.com/vip">会员</a>
+                            <a class="nav-right-item" href="https://www.jiker.com/invite">
+                                <img class="item-left-icon" src="https://www.jiker.com/_nuxt/img/ef576c1.png">邀请红包
+                            </a>
+                            <a class="nav-right-item" href="https://e.jiker.com/fly.html">极客百万社区
+                                <img class="item-right-icon" src="https://www.jiker.com/_nuxt/img/89e16cb.jpeg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="thin-header dropdown-display"></div> -->
+        </div>
+        <div class="page-body">
+            <div class="container-1240 course-mainer-align">
+                <div class="course-mainer-sider">
+                    <div class="course-category">
+                        <div class="catalog-dl">
+                            <div class="catalog-dt active">
+                                <span class="catalog-name font-medium">全部</span>
+                            </div>
+                        </div>
+                        <div class="course-catalog-session">
+                            <div class="catalog-dl">
+                                <div class="catalog-dt font-medium">
+                                    <span class="catalog-name font-medium">人工智能</span>
+                                </div>
+                                <div class="catalog-dd catalog-sub-item font-regular">算法</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">Keras</div>
+                                <div class="catalog-dd catalog-sub-item font-regular"> Caffe</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">高通</div>
+                                <div class="catalog-dd catalog-sub-item font-regular"> AI </div>
+                                <div class="catalog-dd catalog-sub-item font-regular">机器学习</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">神经学</div>
+                                </div>
+                            <div class="catalog-dl">
+                                <div class="catalog-dt font-medium">
+                                    <span class="catalog-name font-medium">大数据</span>
+                                </div>
+                                <div class="catalog-dd catalog-sub-item font-regular">MySQL</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">Git</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">Linux</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">Go</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">Zookeeper</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">Kafka</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">Spark</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">Hive</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">Storm</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">HBase</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">数据处理</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">ECharts</div>
+                            </div> <div class="catalog-dl">
+                                <div class="catalog-dt font-medium">
+                                    <span class="catalog-name font-medium">云计算</span>
+                                </div>
+                                <div class="catalog-dd catalog-sub-item font-regular">AWS</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">腾讯云</div>
+                            </div>
+                            <div class="catalog-dl">
+                                <div class="catalog-dt font-medium">
+                                    <span class="catalog-name font-medium">区块链/物联网</span>
+                                </div>
+                                <div class="catalog-dd catalog-sub-item font-regular">物联网</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">区块链</div>
+                            </div>
+                            <div class="catalog-dl">
+                                <div class="catalog-dt font-medium">
+                                    <span class="catalog-name font-medium">后端开发</span>
+                                </div>
+                                <div class="catalog-dd catalog-sub-item font-regular">Java</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">Python</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">PHP</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">Go</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">C</div>
+                            </div>
+                            <div class="catalog-dl">
+                                <div class="catalog-dt font-medium">
+                                    <span class="catalog-name font-medium">移动端开发</span>
+                                </div>
+                                <div class="catalog-dd catalog-sub-item font-regular">Android</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">iOS</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">微信小程序</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">ReactNative</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">支付宝小程序</div>
+                            </div>
+                            <div class="catalog-dl">
+                                <div class="catalog-dt font-medium">
+                                    <span class="catalog-name font-medium">产品/设计</span>
+                                </div>
+                                <div class="catalog-dd catalog-sub-item font-regular">特效设计</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">产品经理</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">原型分析</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">Axure</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">PhotoShop</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">Illustrator</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">界面设计</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">网页设计</div>
+                            </div>
+                            <div class="catalog-dl">
+                                <div class="catalog-dt font-medium">
+                                    <span class="catalog-name font-medium">前端开发</span>
+                                </div>
+                                <div class="catalog-dd catalog-sub-item font-regular">Canvas</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">JSON</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">Node.js</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">Bootstrap</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">Angluar</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">TypeScript </div>
+                                <div class="catalog-dd catalog-sub-item font-regular">Weui</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">MVVM</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">React</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">JQuery</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">HTML</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">CSS</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">JavaScript</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">Vue.js</div>
+                            </div>
+                            <div class="catalog-dl">
+                                <div class="catalog-dt font-medium">
+                                    <span class="catalog-name font-medium">数据库</span>
+                                </div>
+                                <div class="catalog-dd catalog-sub-item font-regular">SQLite</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">HBase</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">SQL与大数据</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">Oracle</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">MySQL</div>
+                                <div class="catalog-dd catalog-sub-item font-regular">Redis</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-mainer-content">
+                    <div class="course-mainer-nav">
+                        <div class="course-mainer-nav-left">
+                            <span class="course-nav-catalog active"> 全部</span>
+                            <span class="course-nav-catalog">入门</span>
+                            <span class="course-nav-catalog">初级</span>
+                            <span class="course-nav-catalog">中级</span>
+                            <span class="course-nav-catalog">高级</span>
+                        </div>
+                        <div class="course-collect">
+                            <span class="course-collect-item">共<span class="heighlight">144</span>门</span>
+                            <span class="course-collect-item"><span class="heighlight">4034</span>节课</span>
+                            <span class="course-collect-item"><span class="heighlight">756.1</span>小时</span>
+                        </div>
+                        <div class="course-mainer-nav-right">
+                            <span class="course-nav-catalog active">最新</span>
+                            <span class="course-nav-sep"></span>
+                            <span class="course-nav-catalog">学习人数</span>
+                            <span class="course-nav-sep"></span>
+                        </div>
+                    </div>
+                    <div class="course-list">
+                        <a class="course-item" href="https://www.jiker.com/course/191">
+                            <div class="card-course font-regular">
+                                <div class="card-course-verticle-top">
+                                    <div class="cover-img" style="width: 295px; height: 170px; background: url(https://q2.youked.jiker.com/course/43/attachment/xl43-attach-g0FYOIQ2xux3NyLSa9j8AUlnuZA94kNeXQdvHii6.png) center center / 295px 170px no-repeat rgb(180, 182, 195);"></div>
+                                    <span class="card-course-tag status">最新</span>
+                                    <span class="card-course-tag card-course-level card-course-level1"></span>
+                                    <div class="card-course-category"></div>
+                                </div>
+                                <div class="card-course-verticle-bottom">
+                                    <div class="card-course-title intercept font-semibold">Kotlin完全指南</div>
+                                    <div class="card-course-describe">Kotlin被设计为一种工业级的面向对象的语言，并且是比Java更好的语言，但却可以与Java代码完全互操作，这一特点也能够帮助开发者可以更自然的从Java迁移到Kotlin。 不可否认，Kotlin是近一段时间以来最令人激动的新语言之一。其实用性和互操作性让Kotlin成为许多Java开发人员更容易过渡学习的语言之一。但是，更多想要了解和学习Kotlin的学习者可能并没有Java开发背景。为此在本课程中，我们将从头开始研究Kotlin，涵盖想要扎实了解Kotlin所必需的各个主题知识点。 课程中，我们将介绍语言的基础知识，并深入探讨一些棘手的学习问题。诸如构建和测试，泛型和扩展功能之类的主题。我们甚至研究一下Kotlin是如何帮助您编写自己的DSL。我们为此还建立了一套工具，可帮助您成为最有生产力同时最快乐的Kotlin开发人员。</div>
+                                    <div class="card-course-info">
+                                        <i class="time-gray-icon"></i>
+                                        <span class="card-course-info-time">4.2小时</span>
+                                        <span class="separate">…</span>
+                                        <span class="card-course-info-count">31课时</span>
+                                        <span class="separate">…</span>
+                                        <span class="card-course-info-study">319人已学习</span>
+                                    </div>
+                                    <div class="card-course-price font-semibold">
+                                        <div class="card-course-price-content">
+                                            <span class="card-course-price-label font-medium">￥</span>
+                                            <span class="card-course-price-current">198</span>
+                                            <span class="card-course-price-original">￥298</span>
+                                        </div>
+                                        <!---->
+                                    </div>
+                                    <div class="card-course-price card-course-hover">
+                                        <div class="card-course-price-vip-free font-semibold">
+                                            <span class="card-course-price-vip-label">VIP</span>
+                                            免费学
+                                        </div>
+                                        <button size="mini" class="theme-dark-mini-btn"> 立即学习
+                                            <i class="link-white-arrow"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="course-item" href="https://www.jiker.com/course/190">
+                            <div class="card-course font-regular">
+                                <div class="card-course-verticle-top">
+                                    <div class="cover-img" style="width: 295px; height: 170px; background: url(https://q2.youked.jiker.com/course/1931/attachment/xl1931-attach-fvjMkK0297vVD4K5vfYVHlS3SQ6nNvQylcjOFPbp.png) center center / 295px 170px no-repeat rgb(180, 182, 195);" ></div>
+                                    <span class="card-course-tag status">最新</span>
+                                    <span class="card-course-tag card-course-level card-course-level2"></span>
+                                    <div class="card-course-category"></div>
+                                </div>
+                                <div class="card-course-verticle-bottom">
+                                    <div class="card-course-title intercept font-semibold">安全渗透测试</div>
+                                    <div class="card-course-describe">
+                                        本课程是一本可帮助您入门和运行网络安全事业的完整指南。您将学习白帽子和安全渗透测试技术的主要原则和基础。您还将探索专业的网络和安全主题，包括对白帽子，侦察，Kali
+                                        Linux，漏洞利用和权限维持技术的介绍。本课程提供分步的实际场景。您将直接了解白帽子如何对受害者进行初步侦查，如何评估系统，网络安全控制和安全状况。
+                                        “安全渗透测试实时课程”通过10多个小时的培训，其中包括现场讨论，演示，白板说明和屏幕录像，提供了用于评估和破坏网络的方法的专家见解。它涵盖了白帽子的法律方面以及相关的风险。本课程还回顾了许多可用于渗透有线或无线网络以及该网络内系统的工具。还涵盖了多种类型的危害，以及安全规避和权限维持技术。此外，您还将学习社会工程的技术，并特别介绍诸如社会工程工具套件（SET），Metasploit和Maltego之类的工具。
+                                        您将找到有关如何编写渗透测试报告的指南，并学习如何计划和组织报告。
+                                        本课程提供补充材料，以加强学习到的一些关键概念和技术，帮助您构建自己的白帽子环境的脚本以及真实渗透测试报告的示例。您可以在theartofhacking.org上访问此材料。
+                                        尽管有各种白帽子和网络安全认证，但本课程旨在向人们介绍白帽子和渗透测试背后的概念，并且与认证无关。
+                                    </div>
+                                    <div class="card-course-info">
+                                        <i class="time-gray-icon"></i>
+                                        <span class="card-course-info-time">10.7小时</span>
+                                        <span class="separate">…</span>
+                                        <span class="card-course-info-count">111课时</span>
+                                        <span class="separate">…</span>
+                                        <span class="card-course-info-study">416人已学习</span>
+                                    </div>
+                                    <div class="card-course-price font-semibold">
+                                        <div class="card-course-price-content">
+                                            <span class="card-course-price-label font-medium">￥</span>
+                                            <span class="card-course-price-current">1</span>
+                                            <span class="card-course-price-original">￥399</span>
+                                        </div>
+                                        <!---->
+                                    </div>
+                                    <div class="card-course-price card-course-hover">
+                                        <div class="card-course-price-vip-free font-semibold">
+                                            <span class="card-course-price-vip-label">VIP</span>
+                                            免费学
+                                        </div>
+                                        <button size="mini" class="theme-dark-mini-btn">立即学习
+                                            <i class="link-white-arrow"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="course-item" href="https://www.jiker.com/course/187">
+                            <div class="card-course font-regular">
+                                <div class="card-course-verticle-top">
+                                    <div class="cover-img" style="width: 295px; height: 170px; background: url(https://q2.youked.jiker.com/course/1620/attachment/xl1620-attach-ZWVMSGPX3A0LIprGXblucFMrdUog89fVwizhm3At.png) center center / 295px 170px no-repeat rgb(180, 182, 195);" ></div>
+                                    <!---->
+                                    <span class="card-course-tag card-course-level card-course-level2"></span>
+                                    <div class="card-course-category">
+                                        <div class="course-category-item font-medium">Bootstrap</div>
+                                    </div>
+                                </div>
+                                <div class="card-course-verticle-bottom">
+                                    <div class="card-course-title intercept font-semibold">Bootstrap框架基础</div>
+                                    <div class="card-course-describe">本体系讲解了Bootstrap的使用</div>
+                                    <div class="card-course-info">
+                                        <i class="time-gray-icon"></i>
+                                        <span class="card-course-info-time">4.5小时</span>
+                                        <span class="separate">…</span>
+                                        <span class="card-course-info-count">9课时</span>
+                                        <span class="separate">…</span>
+                                        <span class="card-course-info-study">4人已学习</span>
+                                    </div>
+                                    <div class="card-course-price font-semibold">
+                                        <div class="card-course-price-content">
+                                            <span class="card-course-price-label font-medium">￥</span>
+                                            <span class="card-course-price-current">0</span>
+                                            <span class="card-course-price-original">￥0</span>
+                                        </div>
+                                        <!---->
+                                    </div>
+                                    <div class="card-course-price card-course-hover">
+                                        <div class="card-course-price-vip-free font-semibold">
+                                            <span class="card-course-price-vip-label">VIP</span>
+                                            免费学
+                                        </div>
+                                        <button size="mini" class="theme-dark-mini-btn">立即学习
+                                            <i class="link-white-arrow"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="course-item" href="https://www.jiker.com/course/183">
+                            <div class="card-course font-regular">
+                                <div class="card-course-verticle-top">
+                                    <div class="cover-img" style="width: 295px; height: 170px; background: url(https://q2.youked.jiker.com/course/458/attachment/xl458-attach-vf61SY3YwAhlDARzEiWLubd0KHX75RxdH5Im0aYP.png) center center / 295px 170px no-repeat rgb(180, 182, 195);" ></div>
+                                    <!---->
+                                    <span class="card-course-tag card-course-level card-course-level3"></span>
+                                    <div class="card-course-category">
+                                        <div class="course-category-item font-medium">Java</div>
+                                    </div>
+                                </div>
+                                <div class="card-course-verticle-bottom">
+                                    <div class="card-course-title intercept font-semibold">Spring Data JPA</div>
+                                    <div class="card-course-describe">快速掌握Spring Data JPA，提高开发效率。</div>
+                                    <div class="card-course-info">
+                                        <i class="time-gray-icon"></i>
+                                        <span class="card-course-info-time">3.6小时</span>
+                                        <span class="separate">…</span>
+                                        <span class="card-course-info-count">21课时</span>
+                                        <span class="separate">…</span>
+                                        <span class="card-course-info-study">1358人已学习</span>
+                                    </div>
+                                    <div class="card-course-price font-semibold">
+                                        <!---->
+                                        <div class="card-course-price-content">免费</div>
+                                    </div>
+                                    <div class="card-course-price card-course-hover">
+                                        <!---->
+                                        <button size="mini" class="theme-dark-mini-btn"> 立即学习
+                                            <i class="link-white-arrow"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="course-item" href="https://www.jiker.com/course/191">
+                            <div class="card-course font-regular">
+                                <div class="card-course-verticle-top">
+                                    <div class="cover-img" style="width: 295px; height: 170px; background: url(https://q2.youked.jiker.com/course/43/attachment/xl43-attach-g0FYOIQ2xux3NyLSa9j8AUlnuZA94kNeXQdvHii6.png) center center / 295px 170px no-repeat rgb(180, 182, 195);"></div>
+                                    <span class="card-course-tag status">最新</span>
+                                    <span class="card-course-tag card-course-level card-course-level1"></span>
+                                    <div class="card-course-category"></div>
+                                </div>
+                                <div class="card-course-verticle-bottom">
+                                    <div class="card-course-title intercept font-semibold">Kotlin完全指南</div>
+                                    <div class="card-course-describe">Kotlin被设计为一种工业级的面向对象的语言，并且是比Java更好的语言，但却可以与Java代码完全互操作，这一特点也能够帮助开发者可以更自然的从Java迁移到Kotlin。 不可否认，Kotlin是近一段时间以来最令人激动的新语言之一。其实用性和互操作性让Kotlin成为许多Java开发人员更容易过渡学习的语言之一。但是，更多想要了解和学习Kotlin的学习者可能并没有Java开发背景。为此在本课程中，我们将从头开始研究Kotlin，涵盖想要扎实了解Kotlin所必需的各个主题知识点。 课程中，我们将介绍语言的基础知识，并深入探讨一些棘手的学习问题。诸如构建和测试，泛型和扩展功能之类的主题。我们甚至研究一下Kotlin是如何帮助您编写自己的DSL。我们为此还建立了一套工具，可帮助您成为最有生产力同时最快乐的Kotlin开发人员。</div>
+                                    <div class="card-course-info">
+                                        <i class="time-gray-icon"></i>
+                                        <span class="card-course-info-time">4.2小时</span>
+                                        <span class="separate">…</span>
+                                        <span class="card-course-info-count">31课时</span>
+                                        <span class="separate">…</span>
+                                        <span class="card-course-info-study">319人已学习</span>
+                                    </div>
+                                    <div class="card-course-price font-semibold">
+                                        <div class="card-course-price-content">
+                                            <span class="card-course-price-label font-medium">￥</span>
+                                            <span class="card-course-price-current">198</span>
+                                            <span class="card-course-price-original">￥298</span>
+                                        </div>
+                                        <!---->
+                                    </div>
+                                    <div class="card-course-price card-course-hover">
+                                        <div class="card-course-price-vip-free font-semibold">
+                                            <span class="card-course-price-vip-label">VIP</span>
+                                            免费学
+                                        </div>
+                                        <button size="mini" class="theme-dark-mini-btn"> 立即学习
+                                            <i class="link-white-arrow"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="course-item" href="https://www.jiker.com/course/190">
+                            <div class="card-course font-regular">
+                                <div class="card-course-verticle-top">
+                                    <div class="cover-img" style="width: 295px; height: 170px; background: url(https://q2.youked.jiker.com/course/1931/attachment/xl1931-attach-fvjMkK0297vVD4K5vfYVHlS3SQ6nNvQylcjOFPbp.png) center center / 295px 170px no-repeat rgb(180, 182, 195);" ></div>
+                                    <span class="card-course-tag status">最新</span>
+                                    <span class="card-course-tag card-course-level card-course-level2"></span>
+                                    <div class="card-course-category"></div>
+                                </div>
+                                <div class="card-course-verticle-bottom">
+                                    <div class="card-course-title intercept font-semibold">安全渗透测试</div>
+                                    <div class="card-course-describe">
+                                        本课程是一本可帮助您入门和运行网络安全事业的完整指南。您将学习白帽子和安全渗透测试技术的主要原则和基础。您还将探索专业的网络和安全主题，包括对白帽子，侦察，Kali
+                                        Linux，漏洞利用和权限维持技术的介绍。本课程提供分步的实际场景。您将直接了解白帽子如何对受害者进行初步侦查，如何评估系统，网络安全控制和安全状况。
+                                        “安全渗透测试实时课程”通过10多个小时的培训，其中包括现场讨论，演示，白板说明和屏幕录像，提供了用于评估和破坏网络的方法的专家见解。它涵盖了白帽子的法律方面以及相关的风险。本课程还回顾了许多可用于渗透有线或无线网络以及该网络内系统的工具。还涵盖了多种类型的危害，以及安全规避和权限维持技术。此外，您还将学习社会工程的技术，并特别介绍诸如社会工程工具套件（SET），Metasploit和Maltego之类的工具。
+                                        您将找到有关如何编写渗透测试报告的指南，并学习如何计划和组织报告。
+                                        本课程提供补充材料，以加强学习到的一些关键概念和技术，帮助您构建自己的白帽子环境的脚本以及真实渗透测试报告的示例。您可以在theartofhacking.org上访问此材料。
+                                        尽管有各种白帽子和网络安全认证，但本课程旨在向人们介绍白帽子和渗透测试背后的概念，并且与认证无关。
+                                    </div>
+                                    <div class="card-course-info">
+                                        <i class="time-gray-icon"></i>
+                                        <span class="card-course-info-time">10.7小时</span>
+                                        <span class="separate">…</span>
+                                        <span class="card-course-info-count">111课时</span>
+                                        <span class="separate">…</span>
+                                        <span class="card-course-info-study">416人已学习</span>
+                                    </div>
+                                    <div class="card-course-price font-semibold">
+                                        <div class="card-course-price-content">
+                                            <span class="card-course-price-label font-medium">￥</span>
+                                            <span class="card-course-price-current">1</span>
+                                            <span class="card-course-price-original">￥399</span>
+                                        </div>
+                                        <!---->
+                                    </div>
+                                    <div class="card-course-price card-course-hover">
+                                        <div class="card-course-price-vip-free font-semibold">
+                                            <span class="card-course-price-vip-label">VIP</span>
+                                            免费学
+                                        </div>
+                                        <button size="mini" class="theme-dark-mini-btn">立即学习
+                                            <i class="link-white-arrow"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="course-item" href="https://www.jiker.com/course/187">
+                            <div class="card-course font-regular">
+                                <div class="card-course-verticle-top">
+                                    <div class="cover-img" style="width: 295px; height: 170px; background: url(https://q2.youked.jiker.com/course/1620/attachment/xl1620-attach-ZWVMSGPX3A0LIprGXblucFMrdUog89fVwizhm3At.png) center center / 295px 170px no-repeat rgb(180, 182, 195);" ></div>
+                                    <!---->
+                                    <span class="card-course-tag card-course-level card-course-level2"></span>
+                                    <div class="card-course-category">
+                                        <div class="course-category-item font-medium">Bootstrap</div>
+                                    </div>
+                                </div>
+                                <div class="card-course-verticle-bottom">
+                                    <div class="card-course-title intercept font-semibold">Bootstrap框架基础</div>
+                                    <div class="card-course-describe">本体系讲解了Bootstrap的使用</div>
+                                    <div class="card-course-info">
+                                        <i class="time-gray-icon"></i>
+                                        <span class="card-course-info-time">4.5小时</span>
+                                        <span class="separate">…</span>
+                                        <span class="card-course-info-count">9课时</span>
+                                        <span class="separate">…</span>
+                                        <span class="card-course-info-study">4人已学习</span>
+                                    </div>
+                                    <div class="card-course-price font-semibold">
+                                        <div class="card-course-price-content">
+                                            <span class="card-course-price-label font-medium">￥</span>
+                                            <span class="card-course-price-current">0</span>
+                                            <span class="card-course-price-original">￥0</span>
+                                        </div>
+                                        <!---->
+                                    </div>
+                                    <div class="card-course-price card-course-hover">
+                                        <div class="card-course-price-vip-free font-semibold">
+                                            <span class="card-course-price-vip-label">VIP</span>
+                                            免费学
+                                        </div>
+                                        <button size="mini" class="theme-dark-mini-btn">立即学习
+                                            <i class="link-white-arrow"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="course-item" href="https://www.jiker.com/course/183">
+                            <div class="card-course font-regular">
+                                <div class="card-course-verticle-top">
+                                    <div class="cover-img" style="width: 295px; height: 170px; background: url(https://q2.youked.jiker.com/course/458/attachment/xl458-attach-vf61SY3YwAhlDARzEiWLubd0KHX75RxdH5Im0aYP.png) center center / 295px 170px no-repeat rgb(180, 182, 195);" ></div>
+                                    <!---->
+                                    <span class="card-course-tag card-course-level card-course-level3"></span>
+                                    <div class="card-course-category">
+                                        <div class="course-category-item font-medium">Java</div>
+                                    </div>
+                                </div>
+                                <div class="card-course-verticle-bottom">
+                                    <div class="card-course-title intercept font-semibold">Spring Data JPA</div>
+                                    <div class="card-course-describe">快速掌握Spring Data JPA，提高开发效率。</div>
+                                    <div class="card-course-info">
+                                        <i class="time-gray-icon"></i>
+                                        <span class="card-course-info-time">3.6小时</span>
+                                        <span class="separate">…</span>
+                                        <span class="card-course-info-count">21课时</span>
+                                        <span class="separate">…</span>
+                                        <span class="card-course-info-study">1358人已学习</span>
+                                    </div>
+                                    <div class="card-course-price font-semibold">
+                                        <!---->
+                                        <div class="card-course-price-content">免费</div>
+                                    </div>
+                                    <div class="card-course-price card-course-hover">
+                                        <!---->
+                                        <button size="mini" class="theme-dark-mini-btn"> 立即学习
+                                            <i class="link-white-arrow"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="course-item" href="https://www.jiker.com/course/191">
+                            <div class="card-course font-regular">
+                                <div class="card-course-verticle-top">
+                                    <div class="cover-img" style="width: 295px; height: 170px; background: url(https://q2.youked.jiker.com/course/43/attachment/xl43-attach-g0FYOIQ2xux3NyLSa9j8AUlnuZA94kNeXQdvHii6.png) center center / 295px 170px no-repeat rgb(180, 182, 195);"></div>
+                                    <span class="card-course-tag status">最新</span>
+                                    <span class="card-course-tag card-course-level card-course-level1"></span>
+                                    <div class="card-course-category"></div>
+                                </div>
+                                <div class="card-course-verticle-bottom">
+                                    <div class="card-course-title intercept font-semibold">Kotlin完全指南</div>
+                                    <div class="card-course-describe">Kotlin被设计为一种工业级的面向对象的语言，并且是比Java更好的语言，但却可以与Java代码完全互操作，这一特点也能够帮助开发者可以更自然的从Java迁移到Kotlin。 不可否认，Kotlin是近一段时间以来最令人激动的新语言之一。其实用性和互操作性让Kotlin成为许多Java开发人员更容易过渡学习的语言之一。但是，更多想要了解和学习Kotlin的学习者可能并没有Java开发背景。为此在本课程中，我们将从头开始研究Kotlin，涵盖想要扎实了解Kotlin所必需的各个主题知识点。 课程中，我们将介绍语言的基础知识，并深入探讨一些棘手的学习问题。诸如构建和测试，泛型和扩展功能之类的主题。我们甚至研究一下Kotlin是如何帮助您编写自己的DSL。我们为此还建立了一套工具，可帮助您成为最有生产力同时最快乐的Kotlin开发人员。</div>
+                                    <div class="card-course-info">
+                                        <i class="time-gray-icon"></i>
+                                        <span class="card-course-info-time">4.2小时</span>
+                                        <span class="separate">…</span>
+                                        <span class="card-course-info-count">31课时</span>
+                                        <span class="separate">…</span>
+                                        <span class="card-course-info-study">319人已学习</span>
+                                    </div>
+                                    <div class="card-course-price font-semibold">
+                                        <div class="card-course-price-content">
+                                            <span class="card-course-price-label font-medium">￥</span>
+                                            <span class="card-course-price-current">198</span>
+                                            <span class="card-course-price-original">￥298</span>
+                                        </div>
+                                        <!---->
+                                    </div>
+                                    <div class="card-course-price card-course-hover">
+                                        <div class="card-course-price-vip-free font-semibold">
+                                            <span class="card-course-price-vip-label">VIP</span>
+                                            免费学
+                                        </div>
+                                        <button size="mini" class="theme-dark-mini-btn"> 立即学习
+                                            <i class="link-white-arrow"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="course-item" href="https://www.jiker.com/course/190">
+                            <div class="card-course font-regular">
+                                <div class="card-course-verticle-top">
+                                    <div class="cover-img" style="width: 295px; height: 170px; background: url(https://q2.youked.jiker.com/course/1931/attachment/xl1931-attach-fvjMkK0297vVD4K5vfYVHlS3SQ6nNvQylcjOFPbp.png) center center / 295px 170px no-repeat rgb(180, 182, 195);" ></div>
+                                    <span class="card-course-tag status">最新</span>
+                                    <span class="card-course-tag card-course-level card-course-level2"></span>
+                                    <div class="card-course-category"></div>
+                                </div>
+                                <div class="card-course-verticle-bottom">
+                                    <div class="card-course-title intercept font-semibold">安全渗透测试</div>
+                                    <div class="card-course-describe">
+                                        本课程是一本可帮助您入门和运行网络安全事业的完整指南。您将学习白帽子和安全渗透测试技术的主要原则和基础。您还将探索专业的网络和安全主题，包括对白帽子，侦察，Kali
+                                        Linux，漏洞利用和权限维持技术的介绍。本课程提供分步的实际场景。您将直接了解白帽子如何对受害者进行初步侦查，如何评估系统，网络安全控制和安全状况。
+                                        “安全渗透测试实时课程”通过10多个小时的培训，其中包括现场讨论，演示，白板说明和屏幕录像，提供了用于评估和破坏网络的方法的专家见解。它涵盖了白帽子的法律方面以及相关的风险。本课程还回顾了许多可用于渗透有线或无线网络以及该网络内系统的工具。还涵盖了多种类型的危害，以及安全规避和权限维持技术。此外，您还将学习社会工程的技术，并特别介绍诸如社会工程工具套件（SET），Metasploit和Maltego之类的工具。
+                                        您将找到有关如何编写渗透测试报告的指南，并学习如何计划和组织报告。
+                                        本课程提供补充材料，以加强学习到的一些关键概念和技术，帮助您构建自己的白帽子环境的脚本以及真实渗透测试报告的示例。您可以在theartofhacking.org上访问此材料。
+                                        尽管有各种白帽子和网络安全认证，但本课程旨在向人们介绍白帽子和渗透测试背后的概念，并且与认证无关。
+                                    </div>
+                                    <div class="card-course-info">
+                                        <i class="time-gray-icon"></i>
+                                        <span class="card-course-info-time">10.7小时</span>
+                                        <span class="separate">…</span>
+                                        <span class="card-course-info-count">111课时</span>
+                                        <span class="separate">…</span>
+                                        <span class="card-course-info-study">416人已学习</span>
+                                    </div>
+                                    <div class="card-course-price font-semibold">
+                                        <div class="card-course-price-content">
+                                            <span class="card-course-price-label font-medium">￥</span>
+                                            <span class="card-course-price-current">1</span>
+                                            <span class="card-course-price-original">￥399</span>
+                                        </div>
+                                        <!---->
+                                    </div>
+                                    <div class="card-course-price card-course-hover">
+                                        <div class="card-course-price-vip-free font-semibold">
+                                            <span class="card-course-price-vip-label">VIP</span>
+                                            免费学
+                                        </div>
+                                        <button size="mini" class="theme-dark-mini-btn">立即学习
+                                            <i class="link-white-arrow"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="course-item" href="https://www.jiker.com/course/187">
+                            <div class="card-course font-regular">
+                                <div class="card-course-verticle-top">
+                                    <div class="cover-img" style="width: 295px; height: 170px; background: url(https://q2.youked.jiker.com/course/1620/attachment/xl1620-attach-ZWVMSGPX3A0LIprGXblucFMrdUog89fVwizhm3At.png) center center / 295px 170px no-repeat rgb(180, 182, 195);" ></div>
+                                    <!---->
+                                    <span class="card-course-tag card-course-level card-course-level2"></span>
+                                    <div class="card-course-category">
+                                        <div class="course-category-item font-medium">Bootstrap</div>
+                                    </div>
+                                </div>
+                                <div class="card-course-verticle-bottom">
+                                    <div class="card-course-title intercept font-semibold">Bootstrap框架基础</div>
+                                    <div class="card-course-describe">本体系讲解了Bootstrap的使用</div>
+                                    <div class="card-course-info">
+                                        <i class="time-gray-icon"></i>
+                                        <span class="card-course-info-time">4.5小时</span>
+                                        <span class="separate">…</span>
+                                        <span class="card-course-info-count">9课时</span>
+                                        <span class="separate">…</span>
+                                        <span class="card-course-info-study">4人已学习</span>
+                                    </div>
+                                    <div class="card-course-price font-semibold">
+                                        <div class="card-course-price-content">
+                                            <span class="card-course-price-label font-medium">￥</span>
+                                            <span class="card-course-price-current">0</span>
+                                            <span class="card-course-price-original">￥0</span>
+                                        </div>
+                                        <!---->
+                                    </div>
+                                    <div class="card-course-price card-course-hover">
+                                        <div class="card-course-price-vip-free font-semibold">
+                                            <span class="card-course-price-vip-label">VIP</span>
+                                            免费学
+                                        </div>
+                                        <button size="mini" class="theme-dark-mini-btn">立即学习
+                                            <i class="link-white-arrow"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="course-item" href="https://www.jiker.com/course/183">
+                            <div class="card-course font-regular">
+                                <div class="card-course-verticle-top">
+                                    <div class="cover-img" style="width: 295px; height: 170px; background: url(https://q2.youked.jiker.com/course/458/attachment/xl458-attach-vf61SY3YwAhlDARzEiWLubd0KHX75RxdH5Im0aYP.png) center center / 295px 170px no-repeat rgb(180, 182, 195);" ></div>
+                                    <!---->
+                                    <span class="card-course-tag card-course-level card-course-level3"></span>
+                                    <div class="card-course-category">
+                                        <div class="course-category-item font-medium">Java</div>
+                                    </div>
+                                </div>
+                                <div class="card-course-verticle-bottom">
+                                    <div class="card-course-title intercept font-semibold">Spring Data JPA</div>
+                                    <div class="card-course-describe">快速掌握Spring Data JPA，提高开发效率。</div>
+                                    <div class="card-course-info">
+                                        <i class="time-gray-icon"></i>
+                                        <span class="card-course-info-time">3.6小时</span>
+                                        <span class="separate">…</span>
+                                        <span class="card-course-info-count">21课时</span>
+                                        <span class="separate">…</span>
+                                        <span class="card-course-info-study">1358人已学习</span>
+                                    </div>
+                                    <div class="card-course-price font-semibold">
+                                        <!---->
+                                        <div class="card-course-price-content">免费</div>
+                                    </div>
+                                    <div class="card-course-price card-course-hover">
+                                        <!---->
+                                        <button size="mini" class="theme-dark-mini-btn"> 立即学习
+                                            <i class="link-white-arrow"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="pagination-container">
+                        <div class="el-pagination is-background" style="margin-top:16px;">
+                            <button class="btn-prev" type="button" disabled="disabled">
+                                <i class="el-icon el-icon-arrow-left"></i>
+                            </button>
+                            <ul class="el-pager">
+                                <li class="number active">1</li>
+                                <!---->
+                                <li class="number">2</li>
+                                <li class="number">3</li>
+                                <li class="number">4</li>
+                                <li class="number">5</li>
+                                <li class="number">6</li>
+                                <li class="el-icon more btn-quicknext el-icon-more"></li>
+                                <li class="el-icon more btn-quicknext el-icon-d-arrow-right"></li>
+                                <li class="number">12</li>
+                            </ul>
+                            <button class="btn-next" type="button">
+                                <i class="el-icon el-icon-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!---->
+                </div>
+            </div>
+        </div>
+        <div class="page-footer">
+            <div class="footer-section container-1240">
+                <div class="footer-vertical-top">
+                    <div class="logo-container">
+                        <a class="logo-link-exact-active nuxt-link-active" href="https://www.jiker.com/">
+                            <img class="logo-header" src="https://www.jiker.com/_nuxt/img/f8d01f0.svg">
+                        </a>
+                        <div class="logo-desc">面向未来的技术人才教育</div>
+                        <div class="phone-container">
+                            <div class="phone-title">客服电话</div>
+                            <div class="phone-number"> 010-86468343</div>
+                            <a class="footer-button phone-contact" target="_blank" href="https://help.jiker.com/contact.html">联系我们</a>
+                        </div>
+                    </div>
+                    <nav class="nav-container">
+                        <div class="nav-list">
+                            <div class="item-title">课程</div>
+                            <a class="nav-item" href="https://www.jiker.com/plus">实战营</a>
+                            <a class="nav-item" href="https://www.jiker.com/course">视频课</a>
+                        </div>
+                        <div class="nav-list">
+                            <div class="item-title">职业</div>
+                            <a class="nav-item" href="https://www.jiker.com/evaluation">个性定制</a>
+                        </div>
+                        <div class="nav-list">
+                            <div class="item-title">关于</div>
+                            <a class="nav-item" target="_blank" href="https://help.jiker.com">关于极客</a>
+                            <a class="nav-item" target="_blank" href="https://help.jiker.com/join.html">加入我们</a>
+                        </div> <div class="nav-list">
+                            <div class="item-title">合作</div>
+                            <a class="nav-item" href="https://www.jiker.com/one">企业合作</a>
+                            <a class="nav-item" target="_blank" href="https://fuwu.jiker.com/welcome/apply">讲师合作</a>
+                        </div>
+                        <div class="nav-list">
+                            <div class="item-title">支持</div>
+                            <a class="nav-item" target="_blank" href="https://help.jiker.com/pay.html">常见问题</a>
+                            <a class="nav-item" target="_blank" href="http://u97m2siwlpv9xejc.mikecrm.com/OvTVwid">意见反馈</a>
+                        </div>
+                    </nav>
+                    <div class="cooperate-container">
+                        <div class="footer-sub-title">服务与合作</div>
+                        <div class="cooperate-logos">
+                            <img src="https://www.jiker.com/_nuxt/img/9b9d2c5.png" alt="logo.name">
+                            <img src="https://www.jiker.com/_nuxt/img/077f5a0.png" alt="logo.name">
+                            <img src="https://www.jiker.com/_nuxt/img/ac407a2.png" alt="logo.name">
+                            <img src="https://www.jiker.com/_nuxt/img/bc058cd.png" alt="logo.name">
+                            <img src="https://www.jiker.com/_nuxt/img/4c71dd7.png" alt="logo.name">
+                            <img src="https://www.jiker.com/_nuxt/img/2394c7c.png" alt="logo.name">
+                            <img src="https://www.jiker.com/_nuxt/img/53222ca.png" alt="logo.name">
+                            <img src="https://www.jiker.com/_nuxt/img/2203b56.png" alt="logo.name">
+                            <img src="https://www.jiker.com/_nuxt/img/7b4137e.png" alt="logo.name">
+                            <img src="https://www.jiker.com/_nuxt/img/57fa139.png" alt="logo.name">
+                            <img src="https://www.jiker.com/_nuxt/img/c4ebeac.png" alt="logo.name">
+                            <img src="https://www.jiker.com/_nuxt/img/c3ca583.png" alt="logo.name">
+                            <img src="https://www.jiker.com/_nuxt/img/6770560.png" alt="logo.name">
+                        </div>
+                    </div>
+                    <div class="serve-container serve-session">
+                        <div class="footer-sub-title"> 服务与合作</div>
+                        <a class="serve-button footer-button" href="https://www.jiker.com/one">
+                            <i class="enterprise-icon icon"></i>
+                            企业人才云
+                        </a>
+                        <div class="serve-session-tip">成熟方案提高技术团队开发效率</div>
+                        <a href="/edu" class="serve-button footer-button">
+                            <i class="school-icon icon"></i>
+                            高校学习云
+                        </a>
+                        <div class="serve-session-tip">引进企业项目助力新工科</div>
+                    </div>
+                </div>
+                <div class="footer-vertical-bottom">
+                    <div class="social-container">
+                        <a class="icon sina-icon" target="_blank" href="https://weibo.com/jikexueyuan"></a>
+                        <a class="icon twitter-icon" href="javascript:;"></a>
+                        <a class="icon github-icon" href="javascript:;"></a>
+                    </div>
+                    <div class="copyright-container">Copyright © 2013-2020 jiker.com All Rights Reserved.
+                        <a href="http://beian.miit.gov.cn/" target="_blank" style="color: #8e8e8e;">粤ICP备19154936号</a>
+                        京公网安备11010802013056
+                    </div>
+                </div>
+            </div>
+            <div class="invite-section">
+                <div class="container-1240 invite-section-content">
+                    <div class="invite-section-left"> 邀请好友注册，两人同时获得<span>7天会员权益</span>！可累计！</div>
+                    <div class="invite-section-right">
+                        <a class="right-btn-link" href="https://account.jiker.com/?referer=https%3A%2F%2Fwww.jiker.com%2F">
+                            <button class="theme-dark-mini-btn" size="mini"> 立即邀请
+                                <i class="arrow-icon-right"></i>
+                            </button>
+                        </a>
+                        <i class="invite-session-close close-icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="sider-section">
+                <div class="sider-menu-list">
+                    <div class="sider-menu-item menu-item-tel">
+                        <i class="menu-item-icon menu-item-tel-icon"></i>
+                        <div class="menu-item-tel-hover">
+                            <img class="menu-item-tel-card" src="https://www.jiker.com/_nuxt/img/4fd3f0b.png">
+                        </div>
+                    </div>
+                    <div class="sider-menu-item menu-item-wechat">
+                        <i class="menu-item-icon menu-item-wechat-icon"></i>
+                        <div class="menu-item-wechat-hover">
+                            <img class="menu-item-wechat-card" src="https://www.jiker.com/_nuxt/img/c15ce66.png">
+                        </div>
+                    </div>
+                    <div class="sider-menu-item menu-item-gotop">
+                        <i class="menu-item-icon menu-item-gotop-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,1537 @@
+/* 页面样式 */
+/* *{
+    box-sizing: border-box;
+}
+body{
+    min-width: 1440px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    background-color: #dedede;
+    padding: 0;
+    margin: 0;
+} */
+.index-page{
+    min-height: 100vh;
+    min-width: 1080px;
+    display: flex;
+    flex-direction: column;
+}
+/* 页面头部样式 */
+/* .page-header{
+    font-weight: 400;
+    background: #fff;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 5%);
+    z-index: 200;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+} */
+/* 页面默认头部且向上拉时显示样式 */
+/* .default-header.pullup-display{
+    width: 1240px;
+    height: 110px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+} */
+/* 页面头部logo样式 */
+/* a{
+    text-decoration: none;
+}
+.header-logo{
+    width: 135px;
+    height: 61px;
+    margin-right: 54px;
+} */
+/* 页面头部右边样式 */
+/* .header-right{
+    margin-top: 15px;
+    flex: 1 1;
+} */
+/* 页面头部右上边样式 */
+/* .header-right-top{
+    display: flex;
+    justify-content: space-between;
+}
+.search-input-container{
+    width: 756px;
+    font-size: 13px;
+    line-height: normal;
+    display: inline-table;
+    border-collapse: separate;
+    border-spacing: 0;
+    position: relative;
+}
+.input-inner{
+    width: 688px;
+    height: 36px;
+    font-size: inherit;
+    color: #606266;
+    line-height: 36px;
+    background-color: #f5f5f5;
+    border-radius: 4px 0px 0px 4px;
+    border: none;
+    outline: 0;
+    padding: 0 15px 0px 30px;
+    -webkit-appearance: none;
+    transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+}
+.input-prefix{
+    height: 100%;
+    color: #c0c4cc;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transition: all .3s;
+}
+@font-face {
+    font-family: element-icons;
+    src: url(./../535877f.woff);
+}
+.input-prefix-icon{
+    height: 100%;
+    width: 25px;
+    font-family: element-icons!important;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    line-height: 32px;
+    display: inline-block;
+    transition: all .3s;
+}
+.input-prefix-icon::before{
+    content: "\e778";
+}
+.input-prefix-icon::after{
+    content: "";
+    height: 100%;
+    width: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+.search-button{
+    width: 68px;
+    height: 36px;
+    font-weight: 500;
+    color: #909399;
+    text-align: center;
+    line-height: 36px;
+    background-color: #d8d8d8;
+    border: 1px solid #dcdfe6;
+    border-radius: 0px 4px 4px 0px;
+    border-top: 0;
+    border-bottom: 0;
+    cursor: pointer;
+    padding: 0;
+}
+.search-button:hover {
+    background: #0fc700;
+    color: #fff;
+}
+.login-container{
+    width: 105px;
+    height: 36px;
+}
+.login-button{
+    width: 105px;
+    height: 32px;
+    text-align: center;
+    background-color: #1e1e1e;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+.login-button:hover{
+    opacity: .8;
+}
+.login-link{
+    font-size: 12px;
+    color: #fff;
+    line-height: 32px;
+} */
+/* 页面头部右下边样式 */
+/* .header-right-bottom{
+    padding-top: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-left-container{
+    display: flex;
+}
+.nav-left-item{
+    margin-right: 40px;
+    padding-bottom: 18px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+    white-space: nowrap;
+}
+.nav-left-item:hover,.nav-right-item:hover{
+    color: #0fc700;
+}
+.nav-company-hover{
+    width: 47px;
+    height: 3px;
+    background-color: #0fc700;
+    border-radius: 3px;
+    position: absolute;
+    margin: 36px 0px 0px -47px;
+    display: none;
+}
+.nav-left-item.nav-company:hover .nav-company-hover{
+    display: inline-block;
+}
+@-webkit-keyframes nav-company-menu{
+    0%{
+        border-top: 1px solid #eaeaea;
+    }
+    100%{
+        border-top: 1px solid #fff;
+    }
+}
+.nav-company-menu{
+    height: 0;
+    width: 100%;
+    font-size: 16px;
+    line-height: 60px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 110px;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    background-color: #fff;
+    transition: height .3s;
+    transition-delay: .8s;
+    animation: nav-company-menu 1s ease-in;
+}
+.nav-left-item.nav-company:hover .nav-company-menu{
+    height: 60px;
+    border-top: 1px solid #eaeaea;
+    transition-delay: 0s;
+    animation: none;
+}
+.company-menu-frame{
+    width: 1240px;
+    height: 60px;
+    text-align: center;
+    margin: 0 auto;
+}
+.company-menu-link{
+    color: #999;
+    padding: 0 20px;
+}
+.company-menu-link:hover {
+    color: #0fc700;
+}
+.nav-left-item.mr-0{
+    margin-right: 0;
+}
+.nav-left-icon{
+    width: 20px;
+    height: 20px;
+}
+.nav-right-container{
+    display: flex;
+    align-items: center;
+}
+.nav-right-item{
+    font-size: 14px;
+    font-weight: 400;
+    color: #858585;
+    margin-left: 40px;
+    padding-bottom: 18px;
+}
+.item-left-icon{
+    width: 17px;
+    height: 20px;
+    margin-right: 8px;
+}
+.item-right-icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+} */
+/* 页面主体样式 */
+/* .page-body{
+    min-height: 680px;
+    font-weight: 400;
+    background-color: #f5f5f5;
+    flex: auto;
+    margin-top: 110px;
+} */
+/* 横幅部分样式 */
+.banner-sectiion{
+    background-color: #252222;
+    position: relative;
+}
+/* 横幅轮播图片样式 */
+.banner-carousel{
+    flex: 1 1;
+    position: relative;
+    overflow: hidden;
+}
+.carousel-horizontal{
+    position: relative;
+    overflow-x: hidden;
+}
+.carousel-container{
+    height: 380px;
+    position: relative;
+}
+.carousel-item{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: transform .4s ease-in-out,-webkit-transform .4s ease-in-out;
+}
+/* .carousel-item.animation{
+    transform: translateX(1771px) scale(1);
+}
+.carousel-item.active-animation{
+    transform: translateX(0px) scale(1);
+    z-index: 2;
+} */
+.carousel-item-link{
+    background-size: 1920px 380px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 100%;
+    padding: 10px 66px;
+    width: 100%;
+    display: block;
+}
+.carousel-indicators-outside{
+    text-align: center;
+    transform: none;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    position: absolute;
+    bottom: 26px;
+    left: 50%;
+    margin-left: -340px;
+    z-index: 100;
+    padding: 0;
+}
+.carousel-indicator{
+    width: 12px;
+    height: 12px;
+    background-color: transparent;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-right: 6px;
+    padding: 0;
+}
+.carousel-button{
+    display: block;
+    opacity: .48;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    border: none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    transition: .3s;
+}
+.carousel-indicator .carousel-button{
+    width: 8px;
+    height: 8px;
+    opacity: 1;
+    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSI4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHg9IjE4LjUiIHk9IjIuNSIgd2lkdGg9IjciIGhlaWdodD0iNyIgcng9IjMuNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE4IC0yKSIgZmlsbD0iIzlDOUM5QyIgc3Ryb2tlPSIjOTc5Nzk3IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIG9wYWNpdHk9Ii4yIi8+PC9zdmc+);
+}
+.carousel-indicator.active .carousel-button{
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background: url(https://www.jiker.com/_nuxt/img/ed15ebd.svg);
+}
+/* 横幅线条动漫样式 */
+.banner-line{
+    position: absolute;
+    bottom: -600px;
+    left: 50%;
+    margin-left: -620px;
+    z-index: 80;
+}
+@-webkit-keyframes linemove1{
+    0%{
+        top:0;
+    }
+    100%{
+        top:-780px;
+    }
+}
+@-webkit-keyframes linemove2{
+    0%{
+        top:0;
+    }
+    100%{
+        top:-980px;
+    }
+}
+.banner-line-item{
+    position: relative;
+    width: 15px;
+    height: 200px;
+    display: flex;
+    background-color: hsla(0,0%,59.2%,.3);
+}
+.banner-line-item:first-child{
+    animation: linemove1 3s linear infinite;
+    background-color: hsla(0,0%,59.2%,.3);
+}
+.banner-line-item:nth-child(2) {
+    animation: linemove2 3s linear infinite;
+    animation-delay: 1s;
+    background-color: hsla(0,0%,59.2%,.3);
+}
+.banner-line-item::before{
+    content: "";
+    width: 15px;
+    height: 300px;
+    background-color: hsla(0,0%,59.2%,.3);
+    display: inline-block;
+    position: absolute;
+    left: -50px;
+    top: -100px;
+}
+.banner-line-item::after{
+    content: "";
+    width: 15px;
+    height: 300px;
+    background-color: hsla(0,0%,59.2%,.3);
+    display: inline-block;
+    position: absolute;
+    top: -200px;
+    right: -50px;
+}
+/* 横幅浮动广告样式 */
+.banner-float-ads{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 80;
+    top: 55px;
+    right: 50%;
+    margin-right: -620px;
+}
+.ads-link-img{
+    width: 210px;
+    height: 130px;
+    background-image: url(https://assets.jiker.com/_for_ad_sub_project/2020/0619/admin/LXxQHaDxwhMFDllJXHBlvkV6Js2kfHZEbw07cmeZ.png);
+    background-size: 100% 100%;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+/* 横幅内容样式 */
+.banner-content{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    margin-left: -620px;
+    z-index: 100;
+}
+.banner-menu-item:hover{
+    transition: all .5s;
+}
+.menu-item-nav{
+    width: 210px;
+    height: 40px;
+    color: #fff;
+    overflow: auto;
+    background-color: rgba(37,34,34,.5);
+    padding-left: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.menu-item-nav::after{
+    content: "";
+    width: 9px;
+    height: 9px;
+    background: url(https://www.jiker.com/_nuxt/img/c25d52e.svg) no-repeat 0 0;
+    background-size: 9px 9px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.banner-menu-item:hover .menu-item-nav{
+    background-color: rgba(18,18,19,.7);
+    cursor: pointer;
+}
+.menu-item-name{
+    font-size: 14px;
+}
+.menu-item-list{
+    width: 722px;
+    min-height: 360px;
+    background: #222;
+    display: none;
+    position: absolute;
+    left: 210px;
+    top: 0;
+    z-index: 100;
+}
+.banner-menu-item:hover .menu-item-list{
+    opacity: 1;
+    display: block;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+.menu-item-bg-wrap{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(34,34,34,.1) 366px,hsla(0,0%,100%,.3));
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.menu-catalog-list{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+}
+.menu-catalog-dl{
+    width: 722px;
+    margin-bottom: 28px;
+}
+.menu-catalog-dl:last-child{
+    margin-bottom: 0;
+}
+.menu-catalog-dt{
+    height: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 20px;
+    margin-bottom: 12px;
+    padding-left: 10px;
+    position: relative;
+}
+.menu-catalog-dt::before{
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    margin-right: 10px;
+    background-color: #d8d8d8;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.menu-catalog-dt-list{
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu-catalog-dd{
+    font-size: 14px;
+    color: #fff;
+    line-height: 20px;
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 12px;
+    display: inline-flex;
+    align-items: center;
+}
+.menu-catalog-dd:hover {
+    color: #46ff37;
+}
+.menu-catalog-dd::before{
+    content: "";
+    width: 1px;
+    height: 14px;
+    background: #8c8c8d;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.menu-catalog-dd:last-child:before{
+    display: none;
+}
+/* 广告会话样式 */
+.ads-session{
+    display: flex;
+    flex-direction: column;
+}
+/* 广告会话课程样式 */
+.ads-session-course{
+    background-color: #fff;
+    padding: 40px 0;
+}
+.container-1240{
+    width: 1240px;
+    margin: 0 auto;
+}
+.ads-session-content{
+    display: flex;
+    justify-content: space-between;
+}
+.ads-course-session{
+    width: 925px;
+    font-size: 0;
+}
+.ads-session-course-img{
+    display: inline-block;
+    background: rgb(180, 182, 195);
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.ads-session-course-img:nth-child(3n) {
+    margin-right: 0;
+}
+.ads-session-course-img:nth-child(n+4) {
+    margin-bottom: 0;
+}
+@-webkit-keyframes coverLoading{
+    0%{
+        transform: translateX(1px);
+    }
+    50%{
+        transform: translateX(-1px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.cover-img{
+    background: linear-gradient(90deg,#f2f2f2 25%,#e6e6e6 37%,#f2f2f2 63%);
+    width: 400%;
+    height: 100%;
+    animation: coverLoading 1.4s ease-in-out infinite;
+    overflow: hidden;
+}
+.ads-session-img.ads-session-course-img .cover-img{
+    width: 295px;
+    height: 56px;
+    background: rgb(180, 182, 195);
+}
+.ads-circle-session{
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1;
+    margin-left: 20px;
+    height: 122px;
+}
+.ads-circle-session-content{
+    position: relative;
+}
+.ads-session .no-link{
+    cursor: default;
+}
+.ads-session-img{
+    display: inline-block;
+    background: rgb(180, 182, 195);
+    font-size: 0;
+}
+.ads-session-img.ads-session-circle-img .cover-img{
+    width: 142px;
+    height: 122px;
+    background: rgb(180, 182, 195);
+}
+.circle-container-right{
+    width: 160px;
+    height: 205px;
+    text-align: center;
+    background-image: url(https://www.jiker.com/_nuxt/img/21ce563.svg);
+    overflow: hidden;
+    display: none;
+    position: absolute;
+    bottom: 54px;
+    left: -9px;
+    z-index: 300;
+}
+.ads-session-course .ads-circle-session-content:hover .circle-container-right{
+    display: block;
+}
+.circle-item-tip{
+    font-size: 11px;
+    padding: 15px 0 6px;
+}
+.circle-group-image{
+    width: 120px;
+    height: 120px;
+}
+/* 广告会话主要样式 */
+.ads-session-main{
+    padding: 40px 0;
+}
+.ads-session-main .ads-session-content{
+    padding-left: 315px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.ads-session-img{
+    display: inline-block;
+    background-size: 100% 100%;
+}
+.ads-session-main-img{
+    margin-right: 20px;
+}
+.ads-session-main-img:first-child{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.ads-session-main-img:nth-child(2){
+    margin-bottom: 20px;
+}
+.ads-session-main-img:nth-child(3){
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+.ads-session-main-img:nth-child(5){
+    margin-right: 0;
+}
+@-webkit-keyframes bg-coverLoading{
+    0% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+.cover-bg-img{
+    background: linear-gradient(90deg,#f2f2f2 25%,#e6e6e6 37%,#f2f2f2 63%);
+    background-size: 400% 100%;
+    -webkit-animation: bg-coverLoading 1.4s ease infinite;
+    animation: bg-coverLoading 1.4s ease infinite;
+    overflow: hidden;
+}
+/* 广告会话腕样式 */
+.ads-session-wrist{
+    background-color: #303738;
+}
+.container-1440 {
+    width: 1440px;
+    margin: 0 auto;
+}
+/* 职业加成会话样式 */
+.career-plus-session{
+    display: flex;
+}
+/* 加成部分样式 */
+.section-sub-flex{
+    line-height: 20px;
+    padding: 40px 0 20px;
+    display: flex;
+    align-items: center;
+}
+.section-sub-flex .section-sub-hd{
+    font-size: 26px;
+    font-weight: 700;
+    color: #333;
+    line-height: 26px;
+    margin-right: 12px;
+    flex:none
+}
+.career-plus-session .section-sub-flex .section-sub-bd{
+    flex: none;
+}
+.section-sub-flex .section-sub-bd{
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    align-items: center;
+    flex: 1 1;
+}
+.section-sub-flex .section-sub-ft{
+    font-size: 14px;
+    color: #666;
+    line-height: 20px;
+}
+.section-sub-flex .section-sub-link{
+    color: #999;
+    display: flex;
+    align-items: center;
+    transition: all .2s ease;
+}
+.section-sub-flex .section-sub-link .more-black-arrow{
+    margin-left: 10px;
+}
+.more-black-arrow{
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background: url(https://www.jiker.com/_nuxt/img/36330ef.svg);
+    background-repeat: no-repeat;
+}
+.career-plus-session .career,.career-plus-session .plus{
+    position: relative;
+}
+.career-plus-session .plus .plus-list{
+    width: 630px;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+}
+.career-plus-session .plus .plus-list .plus-item{
+    display: inline-block;
+}
+.card-plus{
+    position: relative;
+    display: inline-block;
+    width: 295px;
+    height: 360px;
+    border-radius: 2px;
+    background: #fff;
+    text-align: left;
+    transition: all .2s ease;
+    margin: 0 10px 23px;
+}
+.career-plus-session .plus .plus-list .plus-item .card-plus{
+    margin: 0 20px 0 0;
+}
+.card-plus .card-plus-content-top{
+    height: 170px;
+    white-space: normal;
+    background-size: 295px 170px;
+    background-color: #252225;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    font-size: 0;
+    position: relative;
+}
+.card-plus .card-plus-content-top .tag-status-2{
+    background: url(https://www.jiker.com/_nuxt/img/d6895d3.svg);
+}
+.card-plus .card-plus-content-top .card-plus-tag{
+    width: 95px;
+    height: 30px;
+    display: inline-block;
+    margin-bottom: 30px;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+.card-plus .card-plus-content-bottom{
+    padding: 17px 25px 30px;
+    height: 190px;
+    position: relative;
+}
+.card-plus .card-plus-content-bottom .card-plus-time{
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+    display: flex;
+}
+.card-plus .card-plus-content-bottom .card-plus-time-item{
+    display: flex;
+    align-items: center;
+}
+.career-icon, .time-icon{
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}
+.time-icon{
+    background: url(https://www.jiker.com/_nuxt/img/10c37ef.svg);
+    background-repeat: no-repeat;
+}
+.card-plus .card-plus-content-bottom .card-plus-time-item .time-icon{
+    margin-right: 10px;
+}
+.separate {
+    color: #999;
+    transform: rotate(90deg);
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+}
+.card-plus .card-plus-content-bottom .card-plus-time-item{
+    display: flex;
+    align-items: center;
+}
+.card-plus .card-plus-content-bottom .card-plus-time-item:last-child {
+    padding-right: 0;
+}
+.card-plus .card-plus-description{
+    height: 60px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #999;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    margin: 13px 0 18px;
+}
+.card-plus .card-plus-user{
+    height: 32px;
+    font-size: 14px;
+    line-height: 32px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.card-plus .card-plus-user .card-plus-user-job{
+    height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    line-height: 20px;
+    position: relative;
+}
+.career-icon {
+    background: url(https://www.jiker.com/_nuxt/img/8c0abb4.svg);
+    background-repeat: no-repeat;
+}
+.card-plus .card-plus-user .card-plus-user-job .career-icon{
+    margin-right: 10px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.card-plus .card-plus-user .card-plus-user-job .career-name{
+    width: 245px;
+    padding-left: 26px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+}
+/* 职业部分样式 */
+.career-plus-session .career .career-list{
+    width: 610px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.career-plus-session .career .career-item{
+    width: 295px;
+    height: 170px;
+    text-align: center;
+    border-radius: 2px;
+    color: #333;
+    background: #fff;
+    transition: all .3s ease;
+    margin-bottom: 20px;
+    display: inline-block;
+    flex-shrink: 0;
+}
+.career-plus-session .career .career-item .career-item-img-container{
+    width: 295px;
+    height: 166px;
+}
+/* 课程部分样式 */
+.course-section{
+    margin-bottom: 40px;
+}
+.container-padding{
+    padding: 0 100px;
+}
+.course-section .section-sub-flex .section-sub-bd .course-category-item{
+    display: flex;
+    -ms-flex-align: end;
+    transition: all .3s ease;
+}
+.course-section .section-sub-flex .section-sub-bd .course-category-item:hover{
+    color: #0fc700;
+    cursor: pointer;
+}
+.section-sub-flex .section-sub-bd .fance{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 21px;
+    color: #0fc700;
+    margin: 0 6px;
+    -webkit-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+}
+.course-section .section-sub-flex .section-sub-bd .course-category-item:last-child .fance{
+    display: none;
+}
+.section-sub-flex .section-sub-link:hover {
+    color: #35b558;
+}
+/* 课程列表样式 */
+/* .course-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.course-item{
+    transition: all .2s ease;
+}
+.course-list .course-item{
+    margin-right: 20px;
+    display: inline-block;
+} */
+.course-list .course-item:nth-child(n+5){
+    margin-top: 30px
+}
+.course-list .course-item:nth-child(4n){
+    margin-right: 0;
+}
+/* .course-item:hover {
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.1);
+}
+.card-course{
+    width: 295px;
+    background-color: #fff;
+    position: relative;
+} */
+.font-regular{
+    font-weight: 400;
+}
+/* .card-course .card-course-verticle-top{
+    width: 100%;
+    height: 170px;
+    position: relative;
+}
+.card-course .card-course-verticle-top .card-course-tag{
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 0 0 11px;
+    position: absolute;
+    top: 0;
+}
+.card-course .card-course-verticle-top .card-course-tag.status{
+    width: 44px;
+    height: 26px;
+    background-color: #0fc700;
+    color: #fff;
+    left: 0;
+}
+.card-course .card-course-verticle-top .card-course-level{
+    width: 45px;
+    height: 28px;
+    right: 10px;
+}
+.card-course .card-course-verticle-top .card-course-level1{
+    background: url(https://www.jiker.com/_nuxt/img/e4cb79e.svg);
+}
+.card-course .card-course-verticle-top .card-course-level2{
+    background: url(https://www.jiker.com/_nuxt/img/e77a32a.svg);
+}
+.card-course .card-course-verticle-top .card-course-level3{
+    background: url(https://www.jiker.com/_nuxt/img/00e5a8a.svg);
+}
+.card-course .card-course-verticle-top .card-course-category{
+    padding: 0 25px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card-course .card-course-verticle-top .card-course-category .course-category-item{
+    height: 26px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #333;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 13px;
+    background-color: hsla(0,0%,100%,.59);
+    padding: 0 10px;
+    margin-bottom: 10px;
+    margin-right: 6px;
+    transition: all .2s ease;
+}
+.card-course .card-course-verticle-top .card-course-category .course-category-item:hover{
+    background-color: hsla(0,0%,100%,.7);
+}
+.card-course .card-course-verticle-top .card-course-category .course-category-item:last-child{
+    margin-right: 0;
+}
+.card-course .card-course-verticle-bottom{
+    background: #fff;
+    padding: 15px 20px 20px 25px;
+    position: relative;
+}
+.card-course .card-course-verticle-bottom .card-course-title{
+    height: 56px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #333;
+    margin-bottom: 4px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card-course .card-course-verticle-bottom .card-course-describe{
+    height: 20px;
+    font-size: 14px;
+    color: #666;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 12px;
+}
+.card-course .card-course-verticle-bottom .card-course-info{
+    font-size: 13px;
+    color: #999;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+.time-gray-icon{
+    width: 16px;
+    height: 16px;
+    background: url(https://www.jiker.com/_nuxt/img/a660c2d.svg);
+    background-repeat: no-repeat;
+    margin-right: 8px;
+} */
+/* .card-course .card-course-verticle-bottom .card-course-price{
+    height: 32px;
+    color: #ff4000;
+    margin-top: 10px;
+}
+.font-semibold{
+    font-weight: 600;
+}
+.card-course .card-course-verticle-bottom .card-course-price .card-course-price-content{
+    font-size: 16px;
+    height: 32px;
+    line-height: 32px;
+    display: flex;
+    align-items: flex-end;
+}
+.card-course:hover .card-course-verticle-bottom .card-course-price-content{
+    opacity: 0;
+}
+.card-course .card-course-verticle-bottom .card-course-price .card-course-price-content .card-course-price-label{
+    font-size: 14px;
+    color: #ff4000;
+    line-height: 20px;
+} */
+.font-medium{
+    font-weight: 500;
+}
+/* .card-course .card-course-verticle-bottom .card-course-price .card-course-price-content .card-course-price-current{
+    font-size: 24px;
+    font-weight: 700;
+    color: #ff4000;
+    line-height: 24px;
+}
+.card-course .card-course-verticle-bottom .card-course-price .card-course-price-content .card-course-price-original{
+    font-size: 14px;
+    color: #999;
+    text-decoration: line-through;
+    margin-left: 8px;
+    line-height: 20px;
+}
+.card-course .card-course-verticle-bottom .card-course-hover{
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    opacity: 0;
+    transition: all .2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-course:hover .card-course-verticle-bottom .card-course-hover{
+    opacity: 1;
+}
+.card-course .card-course-verticle-bottom .card-course-hover .card-course-price-vip-free{
+    height: 25px;
+    font-size: 12px;
+    color: #1e1e1e;
+    line-height: 25px;
+    background-color: #eeedf0;
+    border-radius: 20px;
+    padding: 0 10px;
+    margin: 0 75px 0 auto;
+}
+.card-course .card-course-verticle-bottom .card-course-hover .card-course-price-vip-free .card-course-price-vip-label{
+    color: #f7bc15;
+}
+button{
+    outline: none;
+}
+.theme-dark-mini-btn{
+    width: 105px;
+    height: 32px;
+    font-size: 12px;
+    line-height: 32px;
+    color: #fff;
+    text-align: left;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+    padding: 0 16px;
+    display: inline-block;
+    position: relative;
+}
+.card-course .card-course-verticle-bottom .card-course-hover .theme-dark-mini-btn:hover{
+    opacity: .8;
+}
+.link-white-arrow{
+    width: 14px;
+    height: 14px;
+    background: url(https://www.jiker.com/_nuxt/img/c031d49.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.card-course .card-course-verticle-bottom .card-course-hover .theme-dark-mini-btn .link-white-arrow{
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+} */
+.course-section .course-more{
+    width: 144px;
+    height: 44px;
+    font-size: 14px;
+    color: #666;
+    border: 1px solid #999;
+    margin: 40px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* cursor: pointer; */
+}
+.course-section .course-more:hover {
+    opacity: .8;
+}
+.course-section .course-more .more-black-arrow{
+    margin-left: 10px;
+}
+/* 脚部样式 */
+/* .page-footer{
+    background-color: #252222;
+    padding: 50px 100px 57px;
+} */
+/* 脚部部分样式 */
+/* .footer-section{
+    text-align: center;
+    font-weight: 400;
+}
+.footer-vertical-top{
+    padding-bottom: 34px;
+    border-bottom: 1px solid #414141;
+    display: flex;
+    align-items: flex-start;
+}
+.footer-vertical-top .logo-container{
+    text-align: left;
+    margin-right: 128px;
+}
+.footer-vertical-top .logo-container .logo-header{
+    width: 156px;
+    height: 70px;
+    margin-bottom: 15px;
+}
+.footer-vertical-top .logo-container .logo-desc{
+    height: 17px;
+    font-size: 12px;
+    color: #bbb;
+    letter-spacing: 2px;
+    line-height: 17px;
+    margin-bottom: 40px;
+}
+.footer-vertical-top .phone-container{
+    text-align: left;
+}
+.footer-vertical-top .phone-container .phone-title{
+    height: 22px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 22px;
+    margin-bottom: 6px;
+}
+.footer-vertical-top .phone-container .phone-number{
+    height: 28px;
+    font-size: 20px;
+    color: #d5d5d5;
+    line-height: 28px;
+    margin-bottom: 11px;
+}
+.footer-button{
+    width: 144px;
+    height: 43px;
+    font-size: 12px;
+    line-height: 43px;
+    color: #fff;
+    background-color: #333;
+    text-align: center;
+    display: inline-block;
+    transition: .2s ease;
+}
+.footer-button:hover{
+    background-color: #555;
+}
+.footer-vertical-top .nav-container{
+    display: flex;
+    flex-direction: column;
+    padding-right: 0;
+    margin-right: 60px;
+}
+.footer-vertical-top .nav-container .nav-list{
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: row;
+    margin-right: 0;
+}
+.footer-vertical-top .nav-container .nav-list .item-title{
+    height: 22px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 22px;
+    margin-right: 20px;
+}
+.footer-vertical-top .nav-container .nav-list .nav-item{
+    height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #d5d5d5;
+    line-height: 20px;
+    margin-right: 12px;
+    display: inline-block;
+}
+.footer-vertical-top .nav-container .nav-list .nav-item:hover {
+    color: #fff;
+}
+.cooperate-container{
+    width: 383px;
+    margin-right: 54px;
+}
+.footer-sub-title{
+    font-size: 16px;
+    text-align: left;
+    color: #fff;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+.cooperate-container .cooperate-logos{
+    width: 383px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cooperate-container img{
+    width: auto;
+    height: 25px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+.serve-container{
+    text-align: left;
+    width: 144px;
+}
+.serve-container .serve-button{
+    margin-bottom: 8px;
+}
+.serve-container .serve-session-tip{
+    font-size: 12px;
+    line-height: 17px;
+    color: #d5d5d5;
+    margin-bottom: 20px;
+}
+.footer-vertical-bottom .social-container, .footer-vertical-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-vertical-bottom{
+    padding: 20px 0 0;
+}
+.footer-vertical-bottom .social-container .icon{
+    width: 32px;
+    height: 32px;
+    background-color: #a0a0a0;
+    margin-right: 25px;
+    display: inline-block;
+}
+.footer-vertical-bottom .social-container .icon:last-child{
+    margin-right: 0;
+}
+.footer-vertical-bottom .social-container .sina-icon{
+    background: url(https://www.jiker.com/_nuxt/img/56b6ce7.svg) 0 0 no-repeat;
+}
+.footer-vertical-bottom .social-container .twitter-icon{
+    background: url(https://www.jiker.com/_nuxt/img/8e3e38a.svg) 0 0 no-repeat;
+}
+.footer-vertical-bottom .social-container .github-icon{
+    background: url(https://www.jiker.com/_nuxt/img/4297efa.svg) 0 0 no-repeat;
+}
+.footer-vertical-bottom .copyright-container{
+    height: 17px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 17px;
+    color: #8e8e8e;
+} */
+/* 邀请部分样式 */
+/* .invite-section{
+    height: 81px;
+    color: #fff;
+    background-color: #0ca800;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2000;
+}
+.invite-section-content,.invite-section-left,.invite-section-right{
+    display: flex;
+    align-items: center;
+}
+.invite-section-content{
+    height: 81px;
+    justify-content: space-between;
+}
+.invite-section-left {
+    font-size: 14px;
+    line-height: 20px;
+}
+.invite-section-left:before{
+    content: "";
+    width: 154px;
+    height: 76px;
+    background-image: url(https://www.jiker.com/_nuxt/img/39594a9.svg);
+    background-size: 100% 100%;
+}
+.invite-section-left span{
+    font-weight: 700;
+}
+.invite-section-right button{
+    display: flex;
+    align-items: center;
+}
+.invite-section-right button i{
+    margin-left: 10px;
+}
+.arrow-icon-right{
+    width: 10px;
+    height: 14px;
+    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMGw0LjIzIDYuNjVMMCAxNGwxMC03LjM1eiIgZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+);
+    background-repeat: no-repeat;
+}
+.invite-section-right .close-icon{
+    content: "";
+    width: 20px;
+    height: 20px;
+    margin-left: 46px;
+    background-image: url(https://www.jiker.com/_nuxt/img/ac5e1b6.svg);
+    background-size: 100% 100%;
+    cursor: pointer;
+} */
+/* 边栏部分样式 */
+/* .sider-section{
+    box-shadow: -1px 2px 3px #ddd;
+    position: fixed;
+    bottom: 160px;
+    right: 0;
+    z-index: 2000;
+}
+.sider-section .sider-menu-list{
+    width: 50px;
+    background-size: 50px 50px;
+    display: flex;
+    flex-direction: column;
+}
+.sider-menu-list .sider-menu-item{
+    width: 50px;
+    height: 50px;
+    transition: all .2s ease;
+    cursor: pointer;
+    position: relative;
+}
+.sider-menu-list .sider-menu-item .menu-item-icon{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border: none;
+}
+.sider-menu-list .sider-menu-item .menu-item-tel-icon{
+    background: url(https://www.jiker.com/_nuxt/img/479d1c8.png) no-repeat 0 0;
+    background-size: 50px 50px;
+}
+.sider-menu-list .sider-menu-item .menu-item-tel-icon:hover{
+    background: url(https://www.jiker.com/_nuxt/img/41fd392.png) no-repeat 0 0;
+    background-size: 50px 50px;
+}
+.sider-menu-list .sider-menu-item .menu-item-tel-hover{
+    width: 154px;
+    height: 94px;
+    display: none;
+    position: absolute;
+    right: 50px;
+    top: 0;
+}
+.sider-menu-list .sider-menu-item:hover .menu-item-tel-hover,.sider-menu-list .sider-menu-item:hover .menu-item-wechat-hover{
+    display: block;
+}
+.sider-menu-list .sider-menu-item .menu-item-tel-hover .menu-item-tel-card{
+    width: 100%;
+    height: 100%;
+}
+.sider-menu-list .sider-menu-item .menu-item-wechat-icon{
+    background: url(https://www.jiker.com/_nuxt/img/09b31b9.png) no-repeat 0 0;
+    background-size: 50px 50px;
+}
+.sider-menu-list .sider-menu-item .menu-item-wechat-icon:hover{
+    background: url(https://www.jiker.com/_nuxt/img/bafdec9.png) no-repeat 0 0;
+    background-size: 50px 50px;
+}
+.sider-menu-list .sider-menu-item .menu-item-wechat-hover{
+    width: 154px;
+    height: 174px;
+    display: none;
+    position: absolute;
+    right: 50px;
+    top: 0;
+}
+.sider-menu-list .sider-menu-item .menu-item-wechat-hover .menu-item-wechat-card{
+    width: 100%;
+    height: 100%;
+}
+.sider-menu-list .sider-menu-item .menu-item-gotop-icon{
+    background: url(https://www.jiker.com/_nuxt/img/9613413.png) no-repeat 0 0;
+    background-size: 50px 50px;
+}
+.sider-menu-list .sider-menu-item .menu-item-gotop-icon:hover{
+    background: url(https://www.jiker.com/_nuxt/img/5511afe.png) no-repeat 0 0;
+    background-size: 50px 50px;
+} */
+
