@@ -85,7 +85,7 @@ a{
 }
 @font-face {
     font-family: element-icons;
-    src: url(./535877f.woff);
+    src: url(./../535877f.woff);
 }
 .input-prefix-icon{
     height: 100%;
